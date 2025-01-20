@@ -161,10 +161,12 @@ a {
     text-decoration: none;
     border: 0rem;
 }
+
 .banner_btn:hover {
     background-color: var(--color-white);
     color: var(--color-black);
     cursor: pointer;
     border: 0.0625rem solid var(--color-black);
 }
+
 /* Banner section End */
