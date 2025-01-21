@@ -310,7 +310,7 @@ button#cur_nav_btn_left:hover,
     justify-content: center;
     align-items: center;
     gap: 5rem;
-    padding: 3.75rem 0rem;
+    padding: 3.75rem 8.8125rem;
     margin: 0rem -8.8125rem;
     background: url(image),linear-gradient(0.00deg, #fea3014d,#ffffff4d 100%);
 }
@@ -322,11 +322,12 @@ button#cur_nav_btn_left:hover,
 .story_card_container{
     display: grid;
     gap: 1.1875rem;
+    grid-template-columns: 1fr 1fr;
     grid-template-areas: 
-    "two main three"
-    "two main  three"
-    "four main five"
-    "four main five";
+    "main two three"
+    "main two three"
+    "main four five"
+    "main four five";
 }
 /* grid plotting for each card */
 .story_card_main{
@@ -344,23 +345,83 @@ button#cur_nav_btn_left:hover,
 .story_card5{
     grid-area: five;
 }
-/* each card style */
+
+/* Each card style */
 .story_card {
     border-radius: 1rem;
     background: #ffffff;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    box-shadow: 0 4px 6px #0000001a;
 }
+.card_content{
+    padding: 0rem 0rem 2.375rem 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 2rem;
 
-/* story_img */
-/* story_date_btn */
+}
+/* Image style */
+.story_card>img {
+    width: 100%; /* Ensures the image takes full width */
+    border-top-left-radius: 1rem;
+    border-top-right-radius: 1rem;
+}
+/* Date button style */
+.story_date_btn {
+    color: #ffffff; /* White text color */
+    border: none; /* Remove default border */
+    border-radius: 3rem; /* Rounded button */
+    padding: 1rem 2rem; /* Adjust padding for size */
+    font-size: 1rem; /* Adjust font size */
+    margin-top: -1.5rem; /* Pull the button slightly up */
+}
+.story_date_btn#story_date_btn_main {
+    background-color: #3CD8E8;
+}
+.story_date_btn#story_date_btn2 {
+    background-color: #95B226;
+}
+.story_date_btn#story_date_btn3 {
+    background-color: #5D58F0;
+}
+.story_date_btn#story_date_btn4 {
+    background-color: #95B226;
+}
+.story_date_btn#story_date_btn5 {
+    background-color: #95B226;
+}
+/* Title style */
+.story_title#story_card_main_title {
+    font-size: 1.5rem; /* Adjust font size */
+    font-weight: 700; /* Bold text */
+    margin-bottom: 0.5rem; /* Space below the title */
+}
 .story_title{
-    font-size: 1.5rem;
+    font-size: 1rem;
     font-weight: 700;
 }
-.story_subtitle{
+/* Subtitle style */
+.story_subtitle {
     font-size: 1rem;
     font-weight: 500;
+    color: #666666;
 }
 
-/* story_btn */
-
+.story_btn {
+    color: #ffffff;
+    border-radius: 0.75rem;
+    background: #111111;
+    font-size: 1.25rem;
+    font-weight: 700;
+    padding: 0.625rem 1.75rem;
+}
+.story_btn:hover {
+    color: #111111;
+    background: #ffffff;
+    cursor: pointer;
+    border: 0.0625rem solid #111111;
+}
 /* story section End */
