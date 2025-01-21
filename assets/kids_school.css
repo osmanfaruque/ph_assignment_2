@@ -176,7 +176,7 @@ main {
     background-size: cover;
     background-repeat: repeat;
 }
-
+/* Curriculum Section Style Start */
 section.curriculum {
     padding: 3.75rem 0rem;
     display: flex;
@@ -190,14 +190,14 @@ section.curriculum {
     font-size: 2.875rem;
     font-weight: 700;
 }
-
+/* Card Container Style */
 .cur_card_container {
     display: flex;
     width: 100%;
     justify-content: space-between;
     gap: 2rem;
 }
-
+/* cur_Card Style */
 .cur_card {
     width: 33%;
     display: flex;
@@ -207,7 +207,7 @@ section.curriculum {
     gap: 2.5rem;
     padding: 3.75rem 2.5rem;
 }
-
+/* Card Contents style */
 .cur_card_contents {
     display: flex;
     flex-direction: column;
@@ -216,7 +216,6 @@ section.curriculum {
     align-items: center;
     text-align: center;
 }
-
 .cur_card_contents>.card_title {
     font-size: 1.5rem;
     font-weight: 700;
@@ -226,6 +225,7 @@ section.curriculum {
     font-weight: 500;
     color: #808080;
 }
+/* Read More anchor Styling */
 .read_more_btn#btn1{
     font-weight: 700;
     font-size: 1rem;
@@ -247,8 +247,6 @@ section.curriculum {
     text-decoration: none;
 
 }
-
-
 /* card design*/
 .cur_card#card1 {
     box-sizing: border-box;
@@ -257,7 +255,6 @@ section.curriculum {
     box-shadow: inset 0px 0px 1.75rem 0.0625rem #0000000d;
     background: linear-gradient(180deg, #def5ff, #ffffff00 40%), #ffffff;
 }
-
 .cur_card#card2 {
     box-sizing: border-box;
     border: 0.0625rem solid #fff4dc;
@@ -265,7 +262,6 @@ section.curriculum {
     box-shadow: inset 0px 0px 1.75rem 0.0625rem #0000000d;
     background: linear-gradient(180deg, #fff4dc, #ffffff00 40%), #ffffff;
 }
-
 .cur_card#card3 {
     box-sizing: border-box;
     border: 0.0625rem solid #f2e8ff;
@@ -273,7 +269,7 @@ section.curriculum {
     box-shadow: inset 0px 0px 28.3px 0.94px #0000000d;
     background: linear-gradient(180.00deg, #eee1ff, #ffffff00 40%), #ffffff;
 }
-
+/* Navigation Button */
 .btn_container {
     display: flex;
     justify-content: center;
@@ -282,10 +278,11 @@ section.curriculum {
     margin-left: -4rem;
     /* 10px converted to rem */
 }
-
+/* left+right */
 button#cur_nav_btn_left,
 #cur_nav_btn_right {
     border-radius: 50%;
     background: var(--color-primary);
     padding: 1rem;
 }
+/* Curriculum Section Style Start */
