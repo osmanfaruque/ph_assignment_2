@@ -311,11 +311,22 @@ button#cur_nav_btn_left:hover,
     align-items: center;
     gap: 5rem;
     padding: 3.75rem 0rem;
+    margin: 0rem -8.8125rem;
     background: url(image),linear-gradient(0.00deg, #fea3014d,#ffffff4d 100%);
 }
 .story_title {
     font-size: 3rem;
     font-weight: 700;
+}
+/* cards container */
+.story_card_container{
+    display: grid;
+    gap: 1.1875rem;
+    grid-template-areas: 
+    "two main three"
+    "two main  three"
+    "four main five"
+    "four main five";
 }
 /* grid plotting for each card */
 .story_card_main{
@@ -333,21 +344,22 @@ button#cur_nav_btn_left:hover,
 .story_card5{
     grid-area: five;
 }
-
-/* cards container */
-.story_card_container{
-    display: grid;
-    gap: 1.1875rem;
-    grid-template-areas: 
-    "main main two three"
-    "main main two three"
-}
 /* each card style */
-/* story_card */
+.story_card {
+    border-radius: 1rem;
+    background: #ffffff;
+}
+
 /* story_img */
 /* story_date_btn */
-/* story_title */
-/* story_subtitle */
+.story_title{
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+.story_subtitle{
+    font-size: 1rem;
+    font-weight: 500;
+}
 
 /* story_btn */
 
