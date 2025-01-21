@@ -173,11 +173,9 @@ p.banner_subtitle {
 /* Main start */
 main {
     background: url('../assets/bg.png');
-    background-size: cover;
-    background-repeat: repeat;
 }
 /* Curriculum Section Style Start */
-section.curriculum {
+.curriculum {
     padding: 3.75rem 0rem;
     display: flex;
     flex-direction: column;
@@ -190,6 +188,7 @@ section.curriculum {
     font-size: 2.875rem;
     font-weight: 700;
 }
+
 /* Card Container Style */
 .cur_card_container {
     display: flex;
@@ -197,6 +196,7 @@ section.curriculum {
     justify-content: space-between;
     gap: 2rem;
 }
+
 /* cur_Card Style */
 .cur_card {
     width: 33%;
@@ -207,6 +207,7 @@ section.curriculum {
     gap: 2.5rem;
     padding: 3.75rem 2.5rem;
 }
+
 /* Card Contents style */
 .cur_card_contents {
     display: flex;
@@ -216,37 +217,42 @@ section.curriculum {
     align-items: center;
     text-align: center;
 }
+
 .cur_card_contents>.card_title {
     font-size: 1.5rem;
     font-weight: 700;
 }
+
 .cur_card_contents>.card_subtitle {
     font-size: 1rem;
     font-weight: 500;
     color: #808080;
 }
+
 /* Read More anchor Styling */
-.read_more_btn#btn1{
+.read_more_btn#btn1 {
     font-weight: 700;
     font-size: 1rem;
     color: #64C8FF;
     text-decoration: none;
 
 }
-.read_more_btn#btn2{
+
+.read_more_btn#btn2 {
     font-weight: 700;
     font-size: 1rem;
     color: #F0AA00;
     text-decoration: none;
-
 }
-.read_more_btn#btn3{
+
+.read_more_btn#btn3 {
     font-weight: 700;
     font-size: 1rem;
     color: #8700FF;
     text-decoration: none;
 
 }
+
 /* card design*/
 .cur_card#card1 {
     box-sizing: border-box;
@@ -255,6 +261,7 @@ section.curriculum {
     box-shadow: inset 0px 0px 1.75rem 0.0625rem #0000000d;
     background: linear-gradient(180deg, #def5ff, #ffffff00 40%), #ffffff;
 }
+
 .cur_card#card2 {
     box-sizing: border-box;
     border: 0.0625rem solid #fff4dc;
@@ -262,6 +269,7 @@ section.curriculum {
     box-shadow: inset 0px 0px 1.75rem 0.0625rem #0000000d;
     background: linear-gradient(180deg, #fff4dc, #ffffff00 40%), #ffffff;
 }
+
 .cur_card#card3 {
     box-sizing: border-box;
     border: 0.0625rem solid #f2e8ff;
@@ -269,14 +277,13 @@ section.curriculum {
     box-shadow: inset 0px 0px 28.3px 0.94px #0000000d;
     background: linear-gradient(180.00deg, #eee1ff, #ffffff00 40%), #ffffff;
 }
+
 /* Navigation Button */
 .btn_container {
     display: flex;
     justify-content: center;
     align-items: center;
     gap: 0.625rem;
-    margin-left: -4rem;
-    /* 10px converted to rem */
 }
 /* left+right */
 button#cur_nav_btn_left,
@@ -285,7 +292,6 @@ button#cur_nav_btn_left,
     background: var(--color-primary);
     padding: 1rem;
 }
-
 button#cur_nav_btn_left:hover,
 #cur_nav_btn_right:hover {
     background: var(--color-primary);
@@ -293,3 +299,56 @@ button#cur_nav_btn_left:hover,
     cursor: pointer;
 }
 /* Curriculum Section Style end */
+
+
+/* story section start */
+
+/* whole story section */
+.story {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 5rem;
+    padding: 3.75rem 0rem;
+    background: url(image),linear-gradient(0.00deg, #fea3014d,#ffffff4d 100%);
+}
+.story_title {
+    font-size: 3rem;
+    font-weight: 700;
+}
+/* grid plotting for each card */
+.story_card_main{
+    grid-area: main;
+}
+.story_card2{
+    grid-area: two;
+}
+.story_card3{
+    grid-area: three;
+}
+.story_card4{
+    grid-area: four;
+}
+.story_card5{
+    grid-area: five;
+}
+
+/* cards container */
+.story_card_container{
+    display: grid;
+    gap: 1.1875rem;
+    grid-template-areas: 
+    "main main two three"
+    "main main two three"
+}
+/* each card style */
+/* story_card */
+/* story_img */
+/* story_date_btn */
+/* story_title */
+/* story_subtitle */
+
+/* story_btn */
+
+/* story section End */
