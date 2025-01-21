@@ -39,17 +39,20 @@ body {
     padding: 1.25rem 0rem;
     /* padding top and bottom */
 }
+
 /* Navigation Bar Logo */
 .nav>.nav_logo {
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
+
 .nav_logo__title {
     font-size: 2rem;
     font-weight: 700;
     color: var(--color-black);
 }
+
 /* Navigation anchor List */
 nav>ul,
 a {
@@ -98,6 +101,7 @@ a {
     cursor: pointer;
     border: 0.0625rem solid var(--color-primary);
 }
+
 /* Navigation Bar End */
 
 
@@ -162,13 +166,33 @@ a {
     cursor: pointer;
     border: 0.0625rem solid var(--color-black);
 }
+
 /* Banner section End */
 /* header End */
 
 /* Main start */
-main{
+main {
     background: url('../assets/bg.png');
 }
-section{
+
+section.curriculum {
     padding: 3.75rem 0rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    gap: 5rem;
+}
+
+.btn_container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.625rem; /* 10px converted to rem */
+}
+button#cur_nav_btn_left,
+#cur_nav_btn_right {
+    border-radius: 50%;
+    background: var(--color-primary);
+    padding: 1rem;
 }
