@@ -128,21 +128,21 @@ a {
 }
 
 /* different color to different anchor */
-.banner_title>a#empower {
+.banner_title>span#empower {
     color: var(--color-primary);
     font-size: 3.5rem;
     font-weight: 700;
     text-decoration: none;
 }
 
-.banner_title>a#vision {
+.banner_title>span#vision {
     color: var(--color-secondary);
     font-size: 3.5rem;
     font-weight: 700;
     text-decoration: none;
 }
 
-.banner_subtitle {
+p.banner_subtitle {
     font-size: 1.25rem;
     font-weight: 400;
     color: var(--color-black);
