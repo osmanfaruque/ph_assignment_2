@@ -322,27 +322,28 @@ button#cur_nav_btn_left:hover,
 .story_card_container{
     display: grid;
     gap: 1.1875rem;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
     grid-template-areas: 
-    "main two three"
-    "main two three"
-    "main four five"
-    "main four five";
+    "main main two three"
+    "main main two three"
+    "main main four five"
+    "main main four five";
 }
 /* grid plotting for each card */
-.story_card_main{
+#story_card_main{
     grid-area: main;
+    height: 100%;
 }
-.story_card2{
+#story_card2{
     grid-area: two;
 }
-.story_card3{
+#story_card3{
     grid-area: three;
 }
-.story_card4{
+#story_card4{
     grid-area: four;
 }
-.story_card5{
+#story_card5{
     grid-area: five;
 }
 
