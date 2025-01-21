@@ -285,4 +285,11 @@ button#cur_nav_btn_left,
     background: var(--color-primary);
     padding: 1rem;
 }
-/* Curriculum Section Style Start */
+
+button#cur_nav_btn_left:hover,
+#cur_nav_btn_right:hover {
+    background: var(--color-primary);
+    opacity: 0.5;
+    cursor: pointer;
+}
+/* Curriculum Section Style end */
