@@ -561,8 +561,8 @@ footer {
             cursor: pointer;
         }
         .admission_marquee {
-            font-size: 0.9rem;
-            padding: 8px;
+            font-size: 3rem;
+            padding: 1rem;
         }
     
         /* banner section */
