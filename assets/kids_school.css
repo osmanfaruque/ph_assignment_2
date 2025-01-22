@@ -39,20 +39,17 @@ body {
     padding: 1.25rem 0rem;
     /* padding top and bottom */
 }
-
 /* Navigation Bar Logo */
 .nav>.nav_logo {
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
-
 .nav_logo__title {
     font-size: 2rem;
     font-weight: 700;
     color: var(--color-black);
 }
-
 /* Navigation anchor List */
 nav>ul,
 a {
@@ -64,24 +61,19 @@ a {
     font-size: 1.25rem;
     font-weight: 700;
 }
-
 /* different color to different anchor */
 #home .nav__link {
     color: var(--color-primary);
 }
-
 #about .nav__link {
     color: var(--color-secondary);
 }
-
 #facilities .nav__link {
     color: var(--color-accent);
 }
-
 #admission .nav__link {
     color: var(--color-highlight);
 }
-
 /* contact Button */
 .contact_btn {
     box-sizing: border-box;
@@ -94,16 +86,23 @@ a {
     text-decoration: none;
     border: 0rem;
 }
-
 .contact_btn:hover {
     background-color: var(--color-white);
     color: var(--color-primary);
     cursor: pointer;
     border: 0.0625rem solid var(--color-primary);
 }
-
 .menu_bar {
     display: none;
+}
+.admission_marquee {
+    background-color:var(--color-primary);
+    color: var(--color-white);
+    font-size: 3rem;
+    font-weight: bold;
+    padding: 10px 0;
+    border-top: 2px solid var(--color-highlight);
+    border-bottom: 2px solid var(--color-highlight);
 }
 /* Navigation Bar End */
 
@@ -561,6 +560,10 @@ footer {
             font-size: 6rem;
             cursor: pointer;
         }
+        .admission_marquee {
+            font-size: 0.9rem;
+            padding: 8px;
+        }
     
         /* banner section */
         .banner_container {
@@ -665,7 +668,6 @@ footer {
             justify-content: flex-start;
         }
     }
-
 @media screen and (min-width: 390px) and (max-width: 776px) {
         html {font-size: 8px;}
         body {padding: 0rem 1rem;}
